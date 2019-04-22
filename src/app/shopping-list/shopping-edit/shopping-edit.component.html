@@ -1,0 +1,36 @@
+<div class="row">
+  <div class="col-sm-12">
+    <form (submit)="addIngredient(f)" #f="ngForm" autocomplete="off">
+      <div class="row">
+        <div class="col-sm-6 form-group">
+          <label for="name">Name</label>
+          <input
+            type="text"
+            id="name"
+            name="name"
+            ngModel
+            required
+            class="form-control">
+        </div>
+        <div class="col-sm-2 form-group">
+          <label for="amount">Amount</label>
+          <input
+            type="number"
+            id="amount"
+            name="amount"
+            ngModel
+            required
+            min="1"
+            class="form-control">
+        </div>
+      </div>
+      <div class="row">
+        <div class="col-sm-12">
+          <button type="submit" class="btn btn-success">Add</button>
+          <button type="button" class="btn btn-danger">Delete</button>
+          <button type="reset" class="btn btn-primary">Clear</button>
+        </div>
+      </div>
+    </form>
+  </div>
+</div>

@@ -1,0 +1,13 @@
+<main>
+  <app-header
+  (displayRecipes)="onDisplayRecipes($event)"
+  (displayShoppingLists)="onDisplayShoppingLists($event)"></app-header>
+  <div class="container">
+    <div class="row">
+      <div class="col-sm-12">
+          <app-recipes *ngIf="showRecipes"></app-recipes>
+          <app-shopping-list *ngIf="showShoppingLists"></app-shopping-list>
+      </div>
+    </div>
+  </div>
+</main>
