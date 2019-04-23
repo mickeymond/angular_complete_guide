@@ -5,17 +5,4 @@ import { Component } from '@angular/core';
   templateUrl: './app.component.html',
   styleUrls: ['./app.component.css']
 })
-export class AppComponent {
-  showRecipes = true;
-  showShoppingLists = false;
-
-  onDisplayRecipes(event) {
-    // console.log(event);
-    this.showRecipes = event;
-  }
-
-  onDisplayShoppingLists(event) {
-    // console.log(event);
-    this.showShoppingLists = event;
-  }
-}
+export class AppComponent {}

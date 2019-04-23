@@ -13,11 +13,6 @@ export class RecipeListComponent implements OnInit {
 
   constructor(private recipesService: RecipesService) {}
 
-  showDetail(recipe: Recipe) {
-    // console.log(recipe);
-    this.recipesService.selectedRecipe.emit(recipe);
-  }
-
   ngOnInit() {
     this.recipesService.receipesListener.subscribe(
       (recipes: Recipe[]) => {
